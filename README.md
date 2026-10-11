@@ -15,7 +15,7 @@
 
 RedirectTip 会在玩家 **首次上线**、**在子服之间跳转**、**退出整个群组** 时，向全群组（所有子服的所有在线玩家）广播一条提示消息。
 
-所有文字、符号、颜色都可以在 `config.yml` 里自由修改，改完用 `/redirecttip reload` 即可生效。
+所有文字、符号、颜色都可以在 `config.yml` 里自由修改，改完控制台用 `redirecttip reload` 即可生效。
 
 ## 目录
 
@@ -41,7 +41,7 @@ RedirectTip 会在玩家 **首次上线**、**在子服之间跳转**、**退出
 | ⚙️ 完全可配置 | 文字、符号、颜色全部写在 `config.yml`，不需要动代码 |
 | 🌈 彩色字体 | 支持 `&0`-`&f`、`&l/o/n/m/k/r` 以及 `&#RRGGBB` 十六进制颜色 |
 | 🏷️ 子服名称映射 | 把 `survival` 这样的 ID 显示成「生存服」 |
-| 🔄 热重载 | `/redirecttip reload` 修改配置后立即生效 |
+| 🔄 热重载 | `redirecttip reload` 修改配置后立即生效 |
 | 🪶 轻量 | 仅依赖 Velocity API，零第三方运行时依赖 |
 
 ## 效果预览
@@ -74,7 +74,7 @@ messages:
 1. 从 [Releases](../../releases) 下载 `RedirectTip-1.0.0.jar`（或自行构建）
 2. 把 jar 放入 Velocity 的 `plugins/` 文件夹
 3. 重启代理端
-4. 首次启动会自动生成 `plugins/redirecttip/config.yml`，按需修改后执行 `/redirecttip reload`
+4. 首次启动会自动生成 `plugins/redirecttip/config.yml`，按需修改后控制台执行 `redirecttip reload`
 
 ## 配置说明
 
@@ -141,7 +141,7 @@ messages:
 
 | 命令 | 权限 | 说明 |
 | --- | --- | --- |
-| `/redirecttip reload`<br>别名：`/rtip reload` | `redirecttip.reload` | 热重载配置文件 |
+| `redirecttip reload`<br>别名：`rtip reload` | `redirecttip.reload` | 热重载配置文件 |
 
 ## 常见问题
 
@@ -155,7 +155,7 @@ A：玩家退出代理的那一刻已经断开连接，消息无法送达（本�
 A：检查 `config.yml` 里的 `announce-on-first-join` 是否为 `true`。
 
 **Q：改了配置没生效？**
-A：执行 `/redirecttip reload`；如果是刚替换了 jar，需要重启代理端。
+A：执行 `redirecttip reload`；如果是刚替换了 jar，需要重启代理端。
 
 **Q：提示里还是显示英文子服 ID？**
 A：在 `server-names` 里添加对应映射，例如 `survival: "生存服"`。
