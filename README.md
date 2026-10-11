@@ -71,7 +71,7 @@ messages:
 
 ## 安装步骤
 
-1. 从 [Releases](../../releases) 下载 `RedirectTip-1.0.0.jar`（或自行构建）
+1. 从 [Releases](../../releases) 下载 `RedirectTip-0.3.jar`（或自行构建）
 2. 把 jar 放入 Velocity 的 `plugins/` 文件夹
 3. 重启代理端
 4. 首次启动会自动生成 `plugins/redirecttip/config.yml`，按需修改后控制台执行 `redirecttip reload`
