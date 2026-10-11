@@ -1,0 +1,8 @@
+{
+    "id": "redirecttip",
+    "name": "RedirectTip",
+    "version": "0.3",
+    "description": "群组服玩家跳转/离开提示插件",
+    "authors": ["RedirectTip"],
+    "main": "com.redirecttip.RedirectTipPlugin"
+}

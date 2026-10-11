@@ -1,0 +1,6 @@
+com\redirecttip\RedirectListener.class
+com\redirecttip\PluginConfig.class
+com\redirecttip\MessageUtil.class
+com\redirecttip\RedirectTipPlugin.class
+com\redirecttip\ReloadCommand.class
+com\mention\redirectTip\RedirectTip.class
